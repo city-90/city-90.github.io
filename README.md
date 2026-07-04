@@ -55,6 +55,38 @@
         grid-template-columns: 1.4fr 1fr;
       }
 
+      .hero-brand {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 14px;
+        flex-wrap: wrap;
+      }
+
+      .hero-brand img {
+        width: 88px;
+        height: 88px;
+        object-fit: cover;
+        border-radius: 18px;
+        border: 1px solid rgba(160, 198, 178, 0.2);
+        background: rgba(8, 17, 23, 0.82);
+        box-shadow: 0 14px 26px rgba(0, 0, 0, 0.24);
+      }
+
+      .hero-brand-text {
+        display: grid;
+        gap: 6px;
+      }
+
+      .hero-brand-text strong {
+        font-size: clamp(22px, 2.2vw, 32px);
+      }
+
+      .hero-brand-text span {
+        color: var(--accent);
+        font-size: 15px;
+      }
+
       .hero h1 {
         margin: 0 0 10px;
         font-size: clamp(28px, 3vw, 42px);
@@ -311,6 +343,17 @@
         display: none;
       }
 
+      .site-footer {
+        margin-top: 24px;
+        padding: 18px 20px;
+        text-align: center;
+        color: var(--muted);
+        background: rgba(13, 24, 32, 0.72);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+      }
+
       @media (max-width: 1180px) {
         .service-grid,
         .fields-3,
@@ -334,6 +377,14 @@
     <div class="shell">
       <section class="hero">
         <div>
+          <div class="hero-brand">
+            <img src="https://i.postimg.cc/L5tmVHrJ/avatar-gif.gif" alt="شعار التسعين" />
+            <img src="https://i.postimg.cc/vm8RBTLf/Police-B.gif" alt="شعار الأمن العام" />
+            <div class="hero-brand-text">
+              <strong>الأمن العام مدينة التسعين</strong>
+              <span>لوحة تقارير العمليات والإشراف</span>
+            </div>
+          </div>
           <h1>منصة تقارير العمليات</h1>
           <p>
             صفحة واحدة فقط لكتابة ونسخ تقارير العمليات والإشراف. اختر نوع التقرير، يبدأ المؤقت
@@ -802,6 +853,10 @@
           <div class="preview-box" id="previewBox"></div>
         </aside>
       </section>
+
+      <footer class="site-footer">
+        جميع الحقوق محفوظه لفريق التطوير بمدينة التسعين
+      </footer>
     </div>
 
     <script>
